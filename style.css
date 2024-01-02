@@ -1,0 +1,463 @@
+:root {
+    --primary: #3559E0;
+    --secondary: #5FBDFF;
+    --three: #96EFFF;
+    --bg: #C5FFF8;
+}
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* Header  */
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: var(--primary);
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+}
+
+header.nav {
+    border-bottom: 2px solid var(--secondary);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 1;
+}
+
+header .wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    margin-inline: 3px;
+}
+
+header ul li a:hover {
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 10px;
+    padding-block: 5px;
+}
+
+
+/* Main  */
+/* Home & About  */
+main {
+    margin: auto;
+    position: relative;
+}
+
+article {
+    margin: auto;
+    display: flex;
+    padding-block: 20px;
+}
+
+.kolom {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: large;
+    order: -1;
+}
+
+#home img,
+#about img {
+    width: 35rem;
+}
+
+#home {
+    margin-top: 20px;
+    margin-inline: 2rem;
+}
+
+#about {
+    margin-top: 20px;
+}
+
+#about .kolom {
+    order: 1;
+}
+
+
+h2 {
+    font-family: 'comic sans ms', sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 17px 20px 17px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-inline: 5px;
+}
+
+a.tbl-biru:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 17px 20px 17px 20px;
+}
+
+a.tbl-pink {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-pink:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+
+/* Tutors  */
+#tutors {
+    padding-top: 75px;
+    padding-bottom: 50px;
+    background-color: var(--secondary);
+    flex-direction: column;
+}
+
+.tutors-text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 450px;
+}
+
+.tutors-text h1 {
+    font-size: 50px;
+}
+
+.tutors-text p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.tutors-row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tutors-col {
+    flex-basis: 26%;
+    text-align: center;
+}
+
+.tutors-col p {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 100;
+}
+
+.tutors-col img {
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    margin-inline: auto;
+}
+
+.tutors-col h4 {
+    margin-bottom: 15px;
+    font-size: 29px;
+    font-weight: 600;
+}
+
+
+.card {
+    display: block;
+    top: 0px;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 8px 8px rgba(38, 38, 38, 0.2);
+    border-radius: 4px;
+    margin: 20px 12px;
+    padding: 2rem 1rem 3.2rem 1rem;
+
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+    border-radius: 5%;
+    height: 400px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+    top: -20px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+
+/* Aside  */
+aside#author {
+    width: 30%;
+    margin-inline: auto;
+    padding-top: 50px;
+}
+
+#author .profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 180px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin-top: 15px;
+}
+
+.profile div {
+    text-align: center;
+    margin-block: 10px;
+}
+
+#author .profile header h3 {
+    font-size: 27px;
+}
+
+#author .profile h3 {
+    margin-inline: auto;
+    font-size: larger;
+    margin-bottom: 5px;
+    color: black;
+
+}
+
+
+
+.cardProfile {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 350px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 1rem 0 4rem 0;
+    margin-inline: auto;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.cardProfile:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2);
+    top: -8px;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+
+
+
+/* Footer  */
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: .5rem;
+}
+
+footer .socials img {
+    width: 22px;
+}
+
+footer .links {
+    margin-bottom: 1.4em;
+}
+
+footer .links a {
+    color: black;
+    padding: 0.7rem .5rem;
+}
+
+footer .links a:hover {
+    color: var(--primary);
+}
+
+
+/* Icon Sosmed  */
+.social-icons {
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons img {
+    display: block;
+    width: 20px;
+    margin: 0 0 20px 25px;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    opacity: 70%;
+}
+
+
+/* Media Queries  */
+@media screen and (max-width: 991.98px) {
+
+    header.nav .wrapper {
+        width: 100%;
+    }
+
+    .logo a {
+        width: 100%;
+        text-align: center;
+    }
+
+    header.nav .menu ul li {
+        display: none;
+        float: none;
+    }
+
+    article {
+        display: block;
+    }
+
+    article img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    main,
+    #home img,
+    #about img {
+        width: 100%;
+    }
+
+    #about {
+        margin-inline: 2rem;
+    }
+
+
+    .tutors-col {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        margin-inline: 2rem;
+    }
+
+    .card {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    aside#author {
+        width: 70%;
+    }
+
+    aside#author figure img {
+        margin-inline: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .card {
+        height: 425px;
+        padding-block: auto;
+    }
+
+    .logo a {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 900;
+    }
+}
